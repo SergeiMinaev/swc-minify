@@ -1,0 +1,16 @@
+[package]
+name = "swc-minify"
+description = "Simple binary wrapper around SWC to minify JS files. No custom config supported - just specify input file and it's done."
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/SergeiMinaev/swc-minify"
+
+[[bin]]
+name = "swc-minify"
+path = "src/main.rs"
+
+[dependencies]
+swc = "0.273"
+swc_common = "0.33"
+swc_ecma_ast = "0.112"
